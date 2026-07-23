@@ -1,0 +1,763 @@
+{
+  "problems": [
+    {
+      "id": "lc-217",
+      "title": "Contains Duplicate",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/contains-duplicate/",
+      "topic": "Arrays",
+      "pattern": "Hash Map",
+      "companyTags": [
+        "Amazon",
+        "Apple",
+        "Google"
+      ],
+      "frequency": 85,
+      "notes": "Use a hash set to track seen numbers. O(n) time, O(n) space. Alternative: sort first then check neighbors."
+    },
+    {
+      "id": "lc-242",
+      "title": "Valid Anagram",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/valid-anagram/",
+      "topic": "Strings",
+      "pattern": "Hash Map",
+      "companyTags": [
+        "Amazon",
+        "Google",
+        "Facebook"
+      ],
+      "frequency": 88,
+      "notes": "Count character frequencies in both strings and compare. O(n) time. Can also use sorting for O(n log n)."
+    },
+    {
+      "id": "lc-1",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/two-sum/",
+      "topic": "Arrays",
+      "pattern": "Hash Map",
+      "companyTags": [
+        "Amazon",
+        "Google",
+        "Apple",
+        "Microsoft"
+      ],
+      "frequency": 95,
+      "notes": "Classic hash map problem. Key insight: complement = target - nums[i]. One-pass or two-pass hash map both work."
+    },
+    {
+      "id": "lc-49",
+      "title": "Group Anagrams",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/group-anagrams/",
+      "topic": "Strings",
+      "pattern": "Hash Map",
+      "companyTags": [
+        "Amazon",
+        "Bloomberg",
+        "Facebook"
+      ],
+      "frequency": 90,
+      "notes": "Use sorted string or character count tuple as key in hash map. O(n * k log k) with sorting, O(n * k) with count arrays."
+    },
+    {
+      "id": "lc-347",
+      "title": "Top K Frequent Elements",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/top-k-frequent-elements/",
+      "topic": "Arrays",
+      "pattern": "Heap",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Google"
+      ],
+      "frequency": 87,
+      "notes": "Count frequencies with hash map, then use min-heap of size k or bucket sort. O(n log k) with heap, O(n) with bucket sort."
+    },
+    {
+      "id": "lc-36",
+      "title": "Valid Sudoku",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/valid-sudoku/",
+      "topic": "Arrays",
+      "pattern": "Hash Map",
+      "companyTags": [
+        "Apple",
+        "Amazon",
+        "Uber"
+      ],
+      "frequency": 72,
+      "notes": "Use hash sets for rows, columns, and 3x3 boxes. Key format: 'num@row' or use 3 sets per unit. O(1) since board is always 9x9."
+    },
+    {
+      "id": "lc-238",
+      "title": "Product of Array Except Self",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/product-of-array-except-self/",
+      "topic": "Arrays",
+      "pattern": "Prefix Sum",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Microsoft",
+        "Apple"
+      ],
+      "frequency": 93,
+      "notes": "Build prefix products and suffix products. O(n) time, O(1) extra space if output array doesn't count. No division allowed."
+    },
+    {
+      "id": "lc-128",
+      "title": "Longest Consecutive Sequence",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/longest-consecutive-sequence/",
+      "topic": "Arrays",
+      "pattern": "Hash Map",
+      "companyTags": [
+        "Google",
+        "Facebook",
+        "Amazon"
+      ],
+      "frequency": 86,
+      "notes": "Use hash set. Only start counting from numbers that don't have a predecessor (num-1 not in set). O(n) time."
+    },
+    {
+      "id": "lc-125",
+      "title": "Valid Palindrome",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/valid-palindrome/",
+      "topic": "Strings",
+      "pattern": "Two Pointers",
+      "companyTags": [
+        "Facebook",
+        "Microsoft",
+        "Amazon"
+      ],
+      "frequency": 80,
+      "notes": "Two pointers from both ends, skip non-alphanumeric characters. Compare lowercase versions. O(n) time, O(1) space."
+    },
+    {
+      "id": "lc-167",
+      "title": "Two Sum II - Input Array Is Sorted",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/",
+      "topic": "Arrays",
+      "pattern": "Two Pointers",
+      "companyTags": [
+        "Amazon",
+        "Google",
+        "Facebook"
+      ],
+      "frequency": 84,
+      "notes": "Sorted array allows two-pointer approach. Left + right sum vs target determines which pointer to move. O(n) time, O(1) space."
+    },
+    {
+      "id": "lc-15",
+      "title": "3Sum",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/3sum/",
+      "topic": "Arrays",
+      "pattern": "Two Pointers",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Microsoft",
+        "Google"
+      ],
+      "frequency": 91,
+      "notes": "Sort first, then fix one number and use two-sum on the rest. Skip duplicates at each level. O(n\u00b2) time."
+    },
+    {
+      "id": "lc-11",
+      "title": "Container With Most Water",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/container-with-most-water/",
+      "topic": "Arrays",
+      "pattern": "Two Pointers",
+      "companyTags": [
+        "Amazon",
+        "Google",
+        "Facebook",
+        "Microsoft"
+      ],
+      "frequency": 92,
+      "notes": "Two pointers at both ends. Move the pointer with smaller height inward. O(n) time. Area = width * min(height[left], height[right])."
+    },
+    {
+      "id": "lc-121",
+      "title": "Best Time to Buy and Sell Stock",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock/",
+      "topic": "Arrays",
+      "pattern": "Sliding Window",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Bloomberg",
+        "Apple"
+      ],
+      "frequency": 94,
+      "notes": "Track minimum price so far, calculate max profit at each day. Kadane's-like single pass. O(n) time, O(1) space."
+    },
+    {
+      "id": "lc-3",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+      "topic": "Strings",
+      "pattern": "Sliding Window",
+      "companyTags": [
+        "Amazon",
+        "Microsoft",
+        "Meta",
+        "Google"
+      ],
+      "frequency": 96,
+      "notes": "Expand window with right pointer, contract from left when duplicate found. Use hash set or hash map for character indices. O(n) time."
+    },
+    {
+      "id": "lc-424",
+      "title": "Longest Repeating Character Replacement",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+      "topic": "Strings",
+      "pattern": "Sliding Window",
+      "companyTags": [
+        "Google",
+        "Amazon",
+        "Facebook"
+      ],
+      "frequency": 82,
+      "notes": "Sliding window with max frequency count. Window is valid if (window size - max frequency) <= k. O(n) time with 26-char array."
+    },
+    {
+      "id": "lc-20",
+      "title": "Valid Parentheses",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/valid-parentheses/",
+      "topic": "Stack",
+      "pattern": "Stack",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Microsoft",
+        "Google"
+      ],
+      "frequency": 93,
+      "notes": "Use a stack. Push opening brackets, pop and match when closing bracket encountered. Check stack is empty at end. O(n) time."
+    },
+    {
+      "id": "lc-155",
+      "title": "Min Stack",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/min-stack/",
+      "topic": "Stack",
+      "pattern": "Stack",
+      "companyTags": [
+        "Amazon",
+        "Microsoft",
+        "Facebook",
+        "Apple"
+      ],
+      "frequency": 84,
+      "notes": "Two stacks: one for values, one for mins. Or store pairs (val, currentMin). getMin() in O(1), push/pop in O(1)."
+    },
+    {
+      "id": "lc-739",
+      "title": "Daily Temperatures",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/daily-temperatures/",
+      "topic": "Stack",
+      "pattern": "Monotonic Stack",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Google"
+      ],
+      "frequency": 83,
+      "notes": "Monotonic decreasing stack storing indices. When current temp > stack top, pop and calculate days difference. O(n) time."
+    },
+    {
+      "id": "lc-704",
+      "title": "Binary Search",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/binary-search/",
+      "topic": "Arrays",
+      "pattern": "Binary Search",
+      "companyTags": [
+        "Amazon",
+        "Microsoft",
+        "Google"
+      ],
+      "frequency": 78,
+      "notes": "Classic binary search template. While left <= right, calculate mid, compare with target, adjust boundaries. O(log n)."
+    },
+    {
+      "id": "lc-153",
+      "title": "Find Minimum in Rotated Sorted Array",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/",
+      "topic": "Arrays",
+      "pattern": "Binary Search",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Microsoft"
+      ],
+      "frequency": 81,
+      "notes": "Modified binary search. Compare mid with right: if mid > right, min is in right half; else min is at mid or left half. O(log n)."
+    },
+    {
+      "id": "lc-33",
+      "title": "Search in Rotated Sorted Array",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/search-in-rotated-sorted-array/",
+      "topic": "Arrays",
+      "pattern": "Binary Search",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "LinkedIn",
+        "Microsoft"
+      ],
+      "frequency": 88,
+      "notes": "Modified binary search. Determine which half is sorted by comparing mid with left/right. Check if target lies in sorted half. O(log n)."
+    },
+    {
+      "id": "lc-206",
+      "title": "Reverse Linked List",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/reverse-linked-list/",
+      "topic": "Linked List",
+      "pattern": "Two Pointers",
+      "companyTags": [
+        "Amazon",
+        "Microsoft",
+        "Apple",
+        "Google"
+      ],
+      "frequency": 91,
+      "notes": "Iterative: prev, curr, next pointers. Recursive: reverse rest then attach head. Both O(n) time, iterative uses O(1) space."
+    },
+    {
+      "id": "lc-21",
+      "title": "Merge Two Sorted Lists",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/merge-two-sorted-lists/",
+      "topic": "Linked List",
+      "pattern": "Two Pointers",
+      "companyTags": [
+        "Amazon",
+        "Microsoft",
+        "Google",
+        "Facebook"
+      ],
+      "frequency": 86,
+      "notes": "Dummy head + two pointers. Compare nodes and link smaller one. Handle remaining nodes. Recursive solution also possible. O(n+m) time."
+    },
+    {
+      "id": "lc-143",
+      "title": "Reorder List",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/reorder-list/",
+      "topic": "Linked List",
+      "pattern": "Two Pointers",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Microsoft"
+      ],
+      "frequency": 79,
+      "notes": "Three steps: find middle (slow/fast pointers), reverse second half, merge two halves alternately. O(n) time, O(1) space."
+    },
+    {
+      "id": "lc-19",
+      "title": "Remove Nth Node From End of List",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/remove-nth-node-from-end-of-list/",
+      "topic": "Linked List",
+      "pattern": "Two Pointers",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Microsoft"
+      ],
+      "frequency": 85,
+      "notes": "Fast pointer moves n steps ahead, then both move together. When fast reaches end, slow is at node before target. O(n) one-pass."
+    },
+    {
+      "id": "lc-141",
+      "title": "Linked List Cycle",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/linked-list-cycle/",
+      "topic": "Linked List",
+      "pattern": "Two Pointers",
+      "companyTags": [
+        "Amazon",
+        "Microsoft",
+        "Google",
+        "Apple"
+      ],
+      "frequency": 82,
+      "notes": "Floyd's Cycle Detection (slow/fast pointers). If they meet, cycle exists. Can also use hash set but O(n) space. O(n) time, O(1) space."
+    },
+    {
+      "id": "lc-146",
+      "title": "LRU Cache",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/lru-cache/",
+      "topic": "Design",
+      "pattern": "Hash Map",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Google",
+        "Microsoft",
+        "Apple"
+      ],
+      "frequency": 95,
+      "notes": "Hash map + Doubly Linked List. Map stores key -> node reference. List maintains usage order. get/put in O(1). Move accessed nodes to front."
+    },
+    {
+      "id": "lc-226",
+      "title": "Invert Binary Tree",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/invert-binary-tree/",
+      "topic": "Trees",
+      "pattern": "DFS",
+      "companyTags": [
+        "Amazon",
+        "Google",
+        "Microsoft",
+        "Apple"
+      ],
+      "frequency": 83,
+      "notes": "Swap left and right children recursively (DFS) or iteratively (BFS with queue). O(n) time. Classic recursive tree problem."
+    },
+    {
+      "id": "lc-104",
+      "title": "Maximum Depth of Binary Tree",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/maximum-depth-of-binary-tree/",
+      "topic": "Trees",
+      "pattern": "DFS",
+      "companyTags": [
+        "Amazon",
+        "Microsoft",
+        "Google",
+        "Facebook"
+      ],
+      "frequency": 84,
+      "notes": "Recursive DFS: max depth = 1 + max(left depth, right depth). BFS level-order also works counting levels. O(n) time."
+    },
+    {
+      "id": "lc-543",
+      "title": "Diameter of Binary Tree",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/diameter-of-binary-tree/",
+      "topic": "Trees",
+      "pattern": "DFS",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Google"
+      ],
+      "frequency": 80,
+      "notes": "Post-order DFS. At each node, diameter through node = left height + right height. Track global max. Return height to parent. O(n)."
+    },
+    {
+      "id": "lc-110",
+      "title": "Balanced Binary Tree",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/balanced-binary-tree/",
+      "topic": "Trees",
+      "pattern": "DFS",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Microsoft"
+      ],
+      "frequency": 78,
+      "notes": "Bottom-up DFS. Return -1 if subtree unbalanced, else return height. Balanced if |left - right| <= 1. O(n) time."
+    },
+    {
+      "id": "lc-100",
+      "title": "Same Tree",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/same-tree/",
+      "topic": "Trees",
+      "pattern": "DFS",
+      "companyTags": [
+        "Amazon",
+        "Microsoft",
+        "Google"
+      ],
+      "frequency": 76,
+      "notes": "Recursive DFS: compare current nodes, then left subtrees, then right subtrees. BFS with queue also works. O(n) time."
+    },
+    {
+      "id": "lc-572",
+      "title": "Subtree of Another Tree",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/subtree-of-another-tree/",
+      "topic": "Trees",
+      "pattern": "DFS",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Google"
+      ],
+      "frequency": 81,
+      "notes": "For each node in main tree, check if subtree matches starting there (sameTree helper). O(m * n) worst case, can optimize with hashing."
+    },
+    {
+      "id": "lc-235",
+      "title": "Lowest Common Ancestor of a Binary Search Tree",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/",
+      "topic": "Trees",
+      "pattern": "DFS",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Microsoft",
+        "Google"
+      ],
+      "frequency": 86,
+      "notes": "Leverage BST property. If both p,q < root, go left. If both > root, go right. Else root is LCA. O(h) time where h = height."
+    },
+    {
+      "id": "lc-102",
+      "title": "Binary Tree Level Order Traversal",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/binary-tree-level-order-traversal/",
+      "topic": "Trees",
+      "pattern": "BFS",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Microsoft",
+        "Google"
+      ],
+      "frequency": 89,
+      "notes": "BFS with queue. Process nodes level by level, tracking level size. DFS with level parameter also works. O(n) time."
+    },
+    {
+      "id": "lc-199",
+      "title": "Binary Tree Right Side View",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/binary-tree-right-side-view/",
+      "topic": "Trees",
+      "pattern": "BFS",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Microsoft"
+      ],
+      "frequency": 83,
+      "notes": "BFS: last node of each level. DFS: pre-order but visit right child first, track max depth seen. O(n) time."
+    },
+    {
+      "id": "lc-1448",
+      "title": "Count Good Nodes in Binary Tree",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/count-good-nodes-in-binary-tree/",
+      "topic": "Trees",
+      "pattern": "DFS",
+      "companyTags": [
+        "Amazon",
+        "Microsoft",
+        "Google"
+      ],
+      "frequency": 77,
+      "notes": "DFS carrying max value seen so far from root. If current >= max, it's good. Update max and recurse. O(n) time."
+    },
+    {
+      "id": "lc-98",
+      "title": "Validate Binary Search Tree",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/validate-binary-search-tree/",
+      "topic": "Trees",
+      "pattern": "DFS",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Microsoft",
+        "Google"
+      ],
+      "frequency": 88,
+      "notes": "DFS with min/max bounds. Each node must be within (min, max) range. Left child max = node.val, right child min = node.val. O(n)."
+    },
+    {
+      "id": "lc-230",
+      "title": "Kth Smallest Element in a BST",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/kth-smallest-element-in-a-bst/",
+      "topic": "Trees",
+      "pattern": "DFS",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Microsoft",
+        "Google"
+      ],
+      "frequency": 85,
+      "notes": "In-order traversal gives sorted order. Count nodes until kth. Can also use iterative stack. O(h + k) time, O(h) space."
+    },
+    {
+      "id": "lc-703",
+      "title": "Kth Largest Element in a Stream",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
+      "topic": "Heap",
+      "pattern": "Heap",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Google"
+      ],
+      "frequency": 76,
+      "notes": "Min-heap of size k. Top of heap is kth largest. Add new element: if larger than min, pop and push. O(log k) per add."
+    },
+    {
+      "id": "lc-1046",
+      "title": "Last Stone Weight",
+      "difficulty": "Easy",
+      "leetcodeUrl": "https://leetcode.com/problems/last-stone-weight/",
+      "topic": "Heap",
+      "pattern": "Heap",
+      "companyTags": [
+        "Amazon",
+        "Facebook"
+      ],
+      "frequency": 72,
+      "notes": "Max-heap (use negative values in JS min-heap). Pop two heaviest, smash, push difference back if non-zero. O(n log n)."
+    },
+    {
+      "id": "lc-215",
+      "title": "Kth Largest Element in an Array",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/kth-largest-element-in-an-array/",
+      "topic": "Arrays",
+      "pattern": "Heap",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Microsoft",
+        "Google"
+      ],
+      "frequency": 89,
+      "notes": "Min-heap of size k: O(n log k). Quickselect: O(n) average. Sorting: O(n log n). All valid approaches."
+    },
+    {
+      "id": "lc-200",
+      "title": "Number of Islands",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/number-of-islands/",
+      "topic": "Graphs",
+      "pattern": "DFS",
+      "companyTags": [
+        "Amazon",
+        "Microsoft",
+        "Google",
+        "Facebook"
+      ],
+      "frequency": 94,
+      "notes": "Grid DFS/BFS. Mark visited cells (change to '0' or use visited set). Count connected components. O(m * n) time."
+    },
+    {
+      "id": "lc-695",
+      "title": "Max Area of Island",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/max-area-of-island/",
+      "topic": "Graphs",
+      "pattern": "DFS",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Google"
+      ],
+      "frequency": 84,
+      "notes": "Similar to Number of Islands but track area of each island. DFS returns area count. Track global max. O(m * n)."
+    },
+    {
+      "id": "lc-133",
+      "title": "Clone Graph",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/clone-graph/",
+      "topic": "Graphs",
+      "pattern": "DFS",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Microsoft",
+        "Google"
+      ],
+      "frequency": 86,
+      "notes": "Hash map: original node -> clone. DFS or BFS traversal. For each neighbor, recursively clone if not in map. O(V + E)."
+    },
+    {
+      "id": "lc-417",
+      "title": "Pacific Atlantic Water Flow",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/pacific-atlantic-water-flow/",
+      "topic": "Graphs",
+      "pattern": "DFS",
+      "companyTags": [
+        "Amazon",
+        "Google",
+        "Facebook"
+      ],
+      "frequency": 80,
+      "notes": "Reverse thinking: DFS from ocean borders inward. Track cells reachable from Pacific and Atlantic separately. Intersection is answer. O(m * n)."
+    },
+    {
+      "id": "lc-130",
+      "title": "Surrounded Regions",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/surrounded-regions/",
+      "topic": "Graphs",
+      "pattern": "DFS",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Microsoft"
+      ],
+      "frequency": 78,
+      "notes": "DFS from border 'O's to mark unsurrounded regions. Then flip remaining 'O's to 'X' and marked ones back to 'O'. O(m * n)."
+    },
+    {
+      "id": "lc-207",
+      "title": "Course Schedule",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/course-schedule/",
+      "topic": "Graphs",
+      "pattern": "DFS",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Microsoft",
+        "Google"
+      ],
+      "frequency": 90,
+      "notes": "Detect cycle in directed graph. DFS with three states: unvisited, visiting, visited. Or use Kahn's algorithm (indegree/BFS). O(V + E)."
+    },
+    {
+      "id": "lc-210",
+      "title": "Course Schedule II",
+      "difficulty": "Medium",
+      "leetcodeUrl": "https://leetcode.com/problems/course-schedule-ii/",
+      "topic": "Graphs",
+      "pattern": "DFS",
+      "companyTags": [
+        "Amazon",
+        "Facebook",
+        "Microsoft",
+        "Google"
+      ],
+      "frequency": 87,
+      "notes": "Topological sort. DFS post-order reversed, or Kahn's BFS with indegree. Return empty if cycle detected. O(V + E)."
+    }
+  ]
+}

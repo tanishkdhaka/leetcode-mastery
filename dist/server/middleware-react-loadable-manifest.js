@@ -1,0 +1,1 @@
+self.__REACT_LOADABLE_MANIFEST='{"app/settings/page.tsx -> @/lib/db":{"id":60439,"files":[]}}';
